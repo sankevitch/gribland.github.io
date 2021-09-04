@@ -1495,10 +1495,8 @@ section {
 }
 
 .team-list {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
@@ -1513,6 +1511,32 @@ section {
 
 .slick-slide:not(:last-child) {
     margin-right: 2rem;
+}
+
+.team-list .slick-dots {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.team-list .slick-dots button {
+    font-size: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid #14142B;
+}
+
+.team-list .slick-dots li.slick-active button {
+    background-color: #C30052;
+}
+
+.team-list .slick-dots li:not(:last-child) {
+    margin-right: 1.5rem;
 }
 
 .team-item {
@@ -1553,6 +1577,7 @@ section {
     text-transform: uppercase;
     margin-bottom: 2.5rem;
     transition: all 0.4s ease-in-out;
+    padding: 0 1rem;
 }
 
 .team-item-desc {

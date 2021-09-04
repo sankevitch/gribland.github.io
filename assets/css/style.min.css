@@ -509,40 +509,47 @@ section {
   left: 0;
   z-index: 0; }
 
-.decor-human1,
+.decor-human1 {
+  position: absolute;
+  height: 57.4rem;
+  width: 40.8rem;
+  z-index: 0;
+  pointer-events: none; }
+
 .decor-human2 {
   position: absolute;
-  height: 52rem;
-  width: 48rem;
+  height: 52.4rem;
+  width: 57.2rem;
   z-index: 0;
   pointer-events: none; }
 
 .decor-human1 {
-  right: 1rem;
+  right: 5rem;
   top: calc(100vh - 80vh);
   background: url("../images/human1.png") no-repeat; }
 
 .decor-human2 {
-  left: 1rem;
-  top: calc(100vh - 55vh);
+  left: 2rem;
+  top: calc(100vh - 60vh);
   background: url("../images/human2.png") no-repeat; }
 
 @media only screen and (max-width: 1200px) {
   .decor-human1 {
-    width: 32rem;
-    height: 38rem;
+    width: 27.2rem;
+    height: 38.2rem;
     background-size: cover;
-    top: calc(100vh - 65vh); }
+    top: calc(100vh - 70vh); }
   .decor-human2 {
-    width: 32rem;
-    height: 38rem;
+    width: 37.7rem;
+    height: 35rem;
     background-size: cover; } }
 
 @media only screen and (max-width: 1024px) {
   .decor-human1 {
+    right: 0rem;
     top: calc(100vh - 80vh); }
   .decor-human2 {
-    top: calc(100vh - 70vh); } }
+    top: calc(100vh - 60vh); } }
 
 @media only screen and (max-width: 768px) {
   .decor-human1 {
@@ -679,7 +686,7 @@ section {
       flex-direction: column; }
       .header-nav-link {
         display: block;
-        padding: 1rem 0;
+        padding: 1.5rem 0;
         color: white; }
     .header-logo {
       z-index: 999; }
@@ -792,15 +799,17 @@ section {
 
 @media only screen and (max-width: 768px) {
   .intro {
-    min-height: calc(100vh - 40vh); }
+    min-height: calc(100vh - 25vh); }
     .intro-focus {
       font-size: 36px; } }
 
 @media only screen and (max-width: 576px) {
-  .intro-title {
-    font-size: 32px; }
-  .intro-defis {
-    display: none; } }
+  .intro {
+    min-height: calc(100vh - 20vh); }
+    .intro-title {
+      font-size: 32px; }
+    .intro-defis {
+      display: none; } }
 
 .news-title {
   margin-bottom: 10rem; }
@@ -1176,7 +1185,8 @@ section {
   line-height: 1.02;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
-  transition: all 0.4s ease-in-out; }
+  transition: all 0.4s ease-in-out;
+  padding: 0 1rem; }
 
 .team-item-desc {
   font-family: "Montserrat semi-bold";
@@ -1258,9 +1268,10 @@ section {
   width: 112rem;
   height: 61rem;
   max-width: 80%;
-  padding: 3.2rem 3.2rem 15rem 6rem;
+  padding: 4rem 4rem 15rem 4rem;
   background-color: #E9E9F5;
-  background-image: url("../images/modal-bg.png"); }
+  background-image: url("../images/modal-bg.png");
+  background-repeat: no-repeat; }
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1); }
@@ -1304,7 +1315,6 @@ section {
 
 .modal-item-link {
   display: inline-flex;
-  margin-top: -12px;
   padding: 15px;
   z-index: 12;
   background: #C30052;
